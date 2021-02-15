@@ -30,20 +30,14 @@ function About() {
           <p>
             Hack Brooklyn is where your quest begins. Step into a world of magic
             on
-            <strong className="bold"> March 29th </strong>where over 250 of the
-            brightest students in New York City will come together to build
+            <strong className="bold"> April 23rd </strong>where over 500 of the
+            brightest students across the world will come together to build
             innovative solutions for causes ranging from homelessness to the
             lack of diversity.
-            {/* <Typical
-                wrapper="strong"
-                steps={steps}
-                loop={Infinity}
-                className="bold"
-              /> */}
           </p>
           <br />
           <p>
-            Over the course of 24 hours, teams of up to four students will
+            Over the course of 48 hours, teams of up to four students will
             collaborate to use the technology of today to solve present-day
             problems and create the world of tomorrow. Create a project, acquire
             new skills, and network with other hackers and companies as you
