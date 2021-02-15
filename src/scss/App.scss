@@ -4,10 +4,10 @@ body {
     180deg,
     #ffffff 5%,
     rgba(109, 73, 255, 0.6) 25%,
-    rgba(255, 145, 231, 0.5) 75%,
-    rgba(255, 178, 110, 0.6) 95%
+    rgba(255, 145, 231, 0.5) 85%,
+    rgba(255, 178, 110, 0.6) 90%
   );
-  
+
   margin: 0;
   padding: 0;
 
@@ -36,6 +36,9 @@ body {
     font-size: 1.5rem;
     line-height: 1.5;
   }
+  button.register {
+    margin-top: 1.5rem;
+  }
   button.register,
   button.contact {
     color: white;
@@ -43,7 +46,6 @@ body {
     background-color: darkorange;
     border-radius: 1rem;
     font-size: 2em;
-    margin-top: 1rem;
     font-family: "Nunito", sans-serif;
   }
 
@@ -92,8 +94,7 @@ body {
     margin-top: 1.3em;
     margin-bottom: 1.3em;
     height: 1px;
-    background: #333;
-    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    background: #333 linear-gradient(to right, #ccc, #333, #ccc);
   }
   hr:after {
     content: "§";
@@ -155,7 +156,7 @@ body {
       rgba(255, 178, 110, 0.6) 95%
     );
   }
-  
+
   nav.navbar {
     font-family: "Nunito", sans-serif;
     background-color: rgba(93, 40, 227, 0.75);

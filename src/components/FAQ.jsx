@@ -23,7 +23,8 @@ function FAQ() {
     FAQData[1],
     FAQData[2],
     FAQData[3],
-    FAQData[4]
+    FAQData[4],
+    FAQData[5]
   ];
 
   return (

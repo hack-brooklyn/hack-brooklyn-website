@@ -2,7 +2,7 @@ import React from "react";
 
 import "../scss/Landing.scss";
 import Zoom from "react-reveal/Zoom";
-// import Countdown from "react-countdown";
+import Countdown from "react-countdown";
 
 function Landing() {
   return (
@@ -17,57 +17,46 @@ function Landing() {
           HACK<span className="brooklyn">BROOKLYN</span>
         </h1>
 
-        <p className="date-and-time">March 29th 8:00 am - March 30th 8:00 am</p>
-        <p>
-          <a className="locater" href="https://hackbrooklyn.devpost.com">
-            Virtual hackathon hosted by Brooklyn College
-          </a>
-        </p>
+        <p className="date-and-time">April 23rd - April 25th</p>
+        <p>Virtual hackathon hosted by Brooklyn College</p>
 
-        {/* <p className="countdown-clock-time-left">Time Left:</p> */}
-
-        {/* <Countdown
-          date={new Date("Mar 30, 2020 08:00:00 EDT")}
-          renderer={({ hours, completed }) => {
+        <Countdown
+          date={new Date("Feb 19, 2021 00:00:00 EDT")}
+          renderer={({ days, hours, minutes, seconds, completed }) => {
             if (!completed) {
               return (
-                <p className="countdown-clock-hours">
-                  {String(hours) + " hours,"}
-                </p>
+                <div className="countdown-clock">
+                  <p>Priority applications open in</p>
+                  <p>
+                    {String(days) +
+                      " days, " +
+                      String(hours) +
+                      " hours, " +
+                      String(minutes) +
+                      " minutes, and " +
+                      String(seconds) +
+                      " seconds"}
+                  </p>
+                </div>
               );
             } else {
-              return <p className="countdown-clock-hours">Time's up!</p>;
-            }
-          }}
-        /> */}
-
-        {/* <Countdown
-          date={new Date("Mar 30, 2020 08:00:00 EDT")}
-          renderer={({ minutes, seconds, completed }) => {
-            if (!completed) {
               return (
-                <p className="countdown-clock">
-                  {String(minutes) +
-                    " minutes, and " +
-                    String(seconds) +
-                    " seconds"}
-                </p>
+                <>
+                  <p>Priority applications are now open!</p>
+                  <a
+                    href="https://plaza.hackbrooklyn.org/apply"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button type="button" className="btn register">
+                      Apply Now
+                    </button>
+                  </a>
+                </>
               );
-            } else {
-              return <p className="countdown-clock">Time's up!</p>;
             }
           }}
-        /> */}
-
-        {/* <a
-          href="https://hackbrooklyn.typeform.com/to/wOd4nK"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button type="button" className="btn register">
-            Register
-          </button>
-        </a> */}
+        />
       </div>
     </div>
   );

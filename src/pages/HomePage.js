@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Navbar, Nav } from "react-bootstrap";
+import React, { useEffect, useState } from "react";
+import { Nav, Navbar } from "react-bootstrap";
 
 import "typeface-luckiest-guy";
 import "typeface-nunito";
@@ -7,10 +7,11 @@ import "typeface-quicksand";
 import "typeface-delius";
 
 import "../scss/App.scss";
+import "../scss/Sponsors.scss";
 
 import Landing from "../components/Landing";
 import About from "../components/About";
-import SocialGood from "../components/SocialGood";
+// import SocialGood from "../components/SocialGood";
 // import Schedule from "../components/Schedule";
 import FAQ from "../components/FAQ";
 import Sponsors from "../components/Sponsors";
@@ -29,16 +30,12 @@ function HomePage() {
         setScrolled(true);
       }
     });
-  });
+  }, []);
 
   return (
     <div id="homepage" className="container-fluid">
       <div id="content">
-        <Navbar
-          expand="lg"
-          fixed="top"
-          className={scrolled ? "scrolled" : ""}
-        >
+        <Navbar expand="lg" fixed="top" className={scrolled ? "scrolled" : ""}>
           <Navbar.Brand href="/">
             <img
               src="logo192.png"
@@ -55,9 +52,7 @@ function HomePage() {
             <Nav className="ml-auto">
               <Nav.Link href="#landing">Home</Nav.Link>
               <Nav.Link href="#about">About</Nav.Link>
-              {/* <Nav.Link href="#schedule">Schedule</Nav.Link> */}
               <Nav.Link href="#faq">FAQ</Nav.Link>
-              <Nav.Link href="#team">Team</Nav.Link>
               <Nav.Link href="#sponsors">Sponsors</Nav.Link>
             </Nav>
           </Navbar.Collapse>
@@ -65,7 +60,7 @@ function HomePage() {
 
         <Landing />
         <About />
-        <SocialGood />
+        {/* <SocialGood /> */}
         {/* <Schedule /> */}
         <FAQ />
         <Team />

@@ -23,21 +23,22 @@ function Sponsors() {
         </p>
         {/* prettier-ignore */}
         <div>
+          <p className="sponsor-coming-soon">Coming soon...</p>
           {/* Silver Tier */}
-          <Sponsor sponsor="Google" tier="silver" logo={Google} link="https://about.google" />
-          <Sponsor sponsor="LinkedIn" tier="silver" logo={LinkedIn} link="https://www.linkedin.com/company/linkedin" />
-          <Sponsor sponsor="Etsy" tier="silver" logo={Etsy} link="https://www.etsy.com/about" />
-          <Sponsor sponsor="Bloomberg" tier="silver" logo={Bloomberg} link="https://www.bloomberg.com" />
-          <Sponsor sponsor="WiTNY" tier="silver" logo={WiTNY} link="https://witny.org" />
-          <Sponsor sponsor="DigitalOcean" tier="silver" logo={DigitalOcean} link="http://do.co/studenthackathon" />
+          {/*<Sponsor sponsor="Google" tier="silver" logo={Google} link="https://about.google" />*/}
+          {/*<Sponsor sponsor="LinkedIn" tier="silver" logo={LinkedIn} link="https://www.linkedin.com/company/linkedin" />*/}
+          {/*<Sponsor sponsor="Etsy" tier="silver" logo={Etsy} link="https://www.etsy.com/about" />*/}
+          {/*<Sponsor sponsor="Bloomberg" tier="silver" logo={Bloomberg} link="https://www.bloomberg.com" />*/}
+          {/*<Sponsor sponsor="WiTNY" tier="silver" logo={WiTNY} link="https://witny.org" />*/}
+          {/*<Sponsor sponsor="DigitalOcean" tier="silver" logo={DigitalOcean} link="http://do.co/studenthackathon" />*/}
 
-          <br />
+          {/*<br />*/}
 
-          {/* Bronze Tier and Friends */}
-          <Sponsor sponsor="Insomnia Cookies" tier="bronze" logo={Cookies} link="https://insomniacookies.com/about" />
-          <Sponsor sponsor="CUNY Tech Prep" tier="bronze" logo={CTP} link="https://cunytechprep.nyc" />
-          <Sponsor sponsor="TRiO" tier="bronze" logo={TRiO} link="https://www2.ed.gov/programs/triostudsupp/index.html" />
-          <Sponsor sponsor="Calexico" tier="bronze" logo={Calexico} link="https://www.calexico.com" />
+          {/*/!* Bronze Tier and Friends *!/*/}
+          {/*<Sponsor sponsor="Insomnia Cookies" tier="bronze" logo={Cookies} link="https://insomniacookies.com/about" />*/}
+          {/*<Sponsor sponsor="CUNY Tech Prep" tier="bronze" logo={CTP} link="https://cunytechprep.nyc" />*/}
+          {/*<Sponsor sponsor="TRiO" tier="bronze" logo={TRiO} link="https://www2.ed.gov/programs/triostudsupp/index.html" />*/}
+          {/*<Sponsor sponsor="Calexico" tier="bronze" logo={Calexico} link="https://www.calexico.com" />*/}
         </div>
 
         <p className="sponsor">
@@ -49,7 +50,7 @@ function Sponsors() {
 
         <a href="mailto:sponsor@hackbrooklyn.org">
           <button type="button" className="btn contact">
-            Contact us
+            Contact Us
           </button>
         </a>
       </div>
@@ -57,18 +58,16 @@ function Sponsors() {
   );
 }
 
-const Sponsor = props => {
+const Sponsor = (props) => {
   const tier = props.tier;
 
   const SponsorSpacing = () => {
     if (tier === "silver") {
-      return (
-        <br />
-      );
+      return <br />;
     } else {
       return <span />;
     }
-  }
+  };
 
   return (
     <a href={props.link} target="_blank" rel="noopener noreferrer">
