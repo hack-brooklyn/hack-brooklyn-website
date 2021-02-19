@@ -21,7 +21,7 @@ function Landing() {
         <p>Virtual hackathon hosted by Brooklyn College</p>
 
         <Countdown
-          date={new Date("Feb 19, 2021 00:00:00 EDT")}
+          date={new Date("Feb 19, 2021 00:00:00 EST")}
           renderer={({ days, hours, minutes, seconds, completed }) => {
             if (!completed) {
               return (
