@@ -42,7 +42,7 @@ function Landing() {
             } else {
               return (
                 <>
-                  <p>Priority applications are now open!</p>
+                  <p>Applications are now open to the public!</p>
                   <a
                     href="https://plaza.hackbrooklyn.org/apply"
                     target="_blank"
