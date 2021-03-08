@@ -59,11 +59,11 @@ function HomePage() {
         </Navbar>
 
         <Landing />
-        {/* <About /> */}
+        <About />
         {/* <SocialGood /> */}
         {/* <Schedule /> */}
-        {/* <FAQ />
-        <Team />
+        <FAQ />
+        {/*<Team />
         <Sponsors />
         <Ground /> */}
       </div>

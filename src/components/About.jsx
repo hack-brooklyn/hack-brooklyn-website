@@ -1,5 +1,6 @@
 import React from "react";
-import "../styles/scss/About.module.scss";
+import styles from "../styles/scss/About.module.scss";
+import { Row, Col } from "react-bootstrap";
 // import witch from "assets/side-art.svg";
 // import Slide from 'react-reveal/Slide';
 // import Fade from 'react-reveal/Fade';
@@ -18,18 +19,18 @@ function About() {
   ]; */
 
   return (
-    <div id="about" className="row">
+    <Row className={styles.about}>
       <div className="col-12">
         <h2 className="about-header text-center">
-          Welcome to <strong className="bold">Hack Brooklyn!</strong>
+          Welcome to <strong className={styles.bold}>Hack Brooklyn!</strong>
         </h2>
       </div>
       <div className="col about-text">
-        <div className="about-summary">
+        <div className={styles.about_summary}>
           <p>
             Hack Brooklyn is where your quest begins. Step into a world of magic
             on
-            <strong className="bold"> April 23rd </strong>where over 500 of the
+            <strong className={styles.bold}> April 23rd </strong>where over 500 of the
             brightest students across the world will come together to build
             innovative solutions for causes ranging from homelessness to the
             lack of diversity.
@@ -49,10 +50,10 @@ function About() {
           </p>
         </div>
       </div>
-      <div className="col-3 about-image">
-        <img className="witch" src={"assets/side-art.svg"} alt="witch" />
+      <div className={styles.about_image}>
+        <img className={styles.witch} src={"assets/side-art.svg"} alt="witch" />
       </div>
-    </div>
+    </Row>
   );
 }
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-
-import "../styles/scss/FAQ.module.scss";
+import { Row } from "react-bootstrap";
+import styles from "../styles/scss/FAQ.module.scss";
 import FAQData from "../data/FAQ";
 
 function FaqQuestion(props) {
@@ -8,9 +8,9 @@ function FaqQuestion(props) {
     faqItem: { Question, Answer }
   } = props;
   return (
-    <div className="faq-q-and-a">
-      <h3 className="faq-question">{Question}</h3>
-      <p className="faq-answer">{Answer}</p>
+    <div className={styles.faq_q_and_a}>
+      <h3 className={styles.faq_question}>{Question}</h3>
+      <p className={styles.faq_answer}>{Answer}</p>
     </div>
   );
 }
@@ -30,8 +30,8 @@ function FAQ() {
   ];
 
   return (
-    <div id="faq">
-      <h2 className="faq-title">Frequently Asked Questions</h2>
+    <Row className={styles.faq}>
+      <h2 className={styles.faq_title}>Frequently Asked Questions</h2>
       <div className="row">
         {data.map(faq => (
           <div className={width < 600 ? "col-12" : "col-md-6"}>
@@ -39,7 +39,7 @@ function FAQ() {
           </div>
         ))}
       </div>
-    </div>
+    </Row>
   );
 }
 
