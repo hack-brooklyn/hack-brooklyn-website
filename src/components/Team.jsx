@@ -1,14 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import {
   Organizers2021,
   Organizers2020,
   Contributors2020,
 } from "../data/Contributor_Info";
-import "../scss/Team.scss";
-import defaultPic from "../assets/web-dev-pics/test_avatar.png";
+import "../styles/scss/Team.module.scss";
+// import defaultPic from "assets/web-dev-pics/test_avatar.png";
 
 function Team() {
+  const [width, setWidth] = useState(null);
+  useEffect(() => {
+    setWidth(window.screen.width);
+  }, []);
   return (
     <div id="team" className="row">
       <div>
@@ -20,7 +24,7 @@ function Team() {
           <div id="organizers-listings" className="row listings">
             {Organizers2021.map((person) => (
               <div
-                className={window.screen.width < 500 ? "col-6" : "col-4"}
+                className={width < 500 ? "col-6" : "col-4"}
                 align="center"
               >
                 <ProfileView person={person} />
@@ -34,7 +38,7 @@ function Team() {
           <div id="organizers-listings" className="row listings">
             {Organizers2020.map((person) => (
               <div
-                className={window.screen.width < 500 ? "col-6" : "col-3"}
+                className={width < 500 ? "col-6" : "col-3"}
                 align="center"
               >
                 <ProfileView person={person} />
@@ -49,7 +53,7 @@ function Team() {
           <div id="contributors-listings" className="row listings">
             {Contributors2020.map((person) => (
               <div
-                className={window.screen.width < 500 ? "col-6" : "col-3"}
+                className={width < 500 ? "col-6" : "col-3"}
                 align="center"
               >
                 <ProfileView person={person} />
@@ -68,7 +72,7 @@ function ProfileView(props) {
     <div className="avatar">
       <a href={link || "#"} target="_blank" rel="noopener noreferrer">
         <img
-          src={pic || defaultPic}
+          src={pic || "assets/web-dev-pics/test_avatar.png"}
           alt={`${first} ${last}`}
           className="avatar-logo"
         />

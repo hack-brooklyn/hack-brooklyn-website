@@ -1,16 +1,16 @@
 import React from "react";
 
-import Bloomberg from "../assets/company-logos/bloomberg.png";
-import Cookies from "../assets/company-logos/insomniacookies.png";
-import LinkedIn from "../assets/company-logos/linkedin.png";
-import Etsy from "../assets/company-logos/etsy.png";
-import DigitalOcean from "../assets/company-logos/digitalocean.png";
-import Google from "../assets/company-logos/google.png";
-import WiTNY from "../assets/company-logos/witny.png";
-import CTP from "../assets/company-logos/ctp.png";
-import TRiO from "../assets/company-logos/trio.png";
-import Calexico from "../assets/company-logos/calexico.png";
-import "../scss/Sponsors.scss";
+// import Bloomberg from "assets/company-logos/bloomberg.png";
+// import Cookies from "assets/company-logos/insomniacookies.png";
+// import LinkedIn from "assets/company-logos/linkedin.png";
+// import Etsy from "assets/company-logos/etsy.png";
+// import DigitalOcean from "assets/company-logos/digitalocean.png";
+// import Google from "assets/company-logos/google.png";
+// import WiTNY from "assets/company-logos/witny.png";
+// import CTP from "assets/company-logos/ctp.png";
+// import TRiO from "assets/company-logos/trio.png";
+// import Calexico from "assets/company-logos/calexico.png";
+import "../styles/scss/Sponsors.module.scss";
 
 function Sponsors() {
   return (

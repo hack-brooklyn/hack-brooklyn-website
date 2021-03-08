@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
-import "../scss/FAQ.scss";
+import "../styles/scss/FAQ.module.scss";
 import FAQData from "../data/FAQ";
 
 function FaqQuestion(props) {
@@ -16,8 +16,10 @@ function FaqQuestion(props) {
 }
 
 function FAQ() {
-  const [width] = useState(window.screen.width);
-
+  const [width, setWidth] = useState(null);
+  useEffect(() => {
+    setWidth(window.screen.width);
+  }, []);
   const data = [
     FAQData[0],
     FAQData[1],

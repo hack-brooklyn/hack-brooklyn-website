@@ -1,7 +1,6 @@
 import React from "react";
-
-import "../scss/About.scss";
-import witch from "../assets/side-art.svg";
+import "../styles/scss/About.module.scss";
+// import witch from "assets/side-art.svg";
 // import Slide from 'react-reveal/Slide';
 // import Fade from 'react-reveal/Fade';
 // import Typical from 'react-typical';
@@ -51,7 +50,7 @@ function About() {
         </div>
       </div>
       <div className="col-3 about-image">
-        <img className="witch" src={witch} alt="witch" />
+        <img className="witch" src={"assets/side-art.svg"} alt="witch" />
       </div>
     </div>
   );

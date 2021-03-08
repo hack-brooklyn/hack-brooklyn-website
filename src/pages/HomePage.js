@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { Nav, Navbar } from "react-bootstrap";
+import { Nav, Navbar, Container } from "react-bootstrap";
 
 import "typeface-luckiest-guy";
 import "typeface-nunito";
 import "typeface-quicksand";
 import "typeface-delius";
 
-import "../scss/App.scss";
-import "../scss/Sponsors.scss";
+
+import "../styles/scss/Sponsors.module.scss";
 
 import Landing from "../components/Landing";
 import About from "../components/About";
@@ -33,7 +33,7 @@ function HomePage() {
   }, []);
 
   return (
-    <div id="homepage" className="container-fluid">
+    <Container className="homepage" fluid>
       <div id="content">
         <Navbar expand="lg" fixed="top" className={scrolled ? "scrolled" : ""}>
           <Navbar.Brand href="/">
@@ -59,15 +59,15 @@ function HomePage() {
         </Navbar>
 
         <Landing />
-        <About />
+        {/* <About /> */}
         {/* <SocialGood /> */}
         {/* <Schedule /> */}
-        <FAQ />
+        {/* <FAQ />
         <Team />
         <Sponsors />
-        <Ground />
+        <Ground /> */}
       </div>
-    </div>
+    </Container>
   );
 }
 

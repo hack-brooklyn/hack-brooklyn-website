@@ -1,32 +1,34 @@
 import React from "react";
-
-import "../scss/Landing.scss";
+import { Row, Button } from "react-bootstrap";
+import styles from "../styles/scss/Landing.module.scss";
 import Zoom from "react-reveal/Zoom";
 import Countdown from "react-countdown";
 
 function Landing() {
   return (
-    <div id="landing" className="row">
+    <Row className={styles.landing}>
       <div className="col-12">
-        <p className="intro disable-user-select">
+        <p className={styles.intro}>
           <Zoom cascade duration={3000}>
             Where Your Fantasies Come Alive
           </Zoom>
         </p>
-        <h1 className="disable-user-select">
-          HACK<span className="brooklyn">BROOKLYN</span>
+        <h1 >
+          HACK<span className={styles.brooklyn}>BROOKLYN</span>
         </h1>
 
         <p className="date-and-time">April 23rd - April 25th</p>
-        <p>Virtual hackathon hosted by Brooklyn College</p>
+        <p>Virtual hackathon hosted by Brooklyn College
+
+</p>
 
         <Countdown
           date={new Date("Feb 19, 2021 00:00:00 EST")}
           renderer={({ days, hours, minutes, seconds, completed }) => {
             if (!completed) {
               return (
-                <div className="countdown-clock">
-                  <p>Priority applications open in</p>
+                <div className={styles.countdown_clock}>
+                  <p> Priority applications open in</p>
                   <p>
                     {String(days) +
                       " days, " +
@@ -42,15 +44,14 @@ function Landing() {
             } else {
               return (
                 <>
-                  <p>Priority applications are now open!</p>
+                  <p>Applications are now open to the public!</p>
                   <a
                     href="https://plaza.hackbrooklyn.org/apply"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button type="button" className="btn register">
-                      Apply Now
-                    </button>
+                    <Button type="button" variant="success" className={styles.register} >Apply Now</Button>
+
                   </a>
                 </>
               );
@@ -58,7 +59,7 @@ function Landing() {
           }}
         />
       </div>
-    </div>
+    </Row >
   );
 }
 

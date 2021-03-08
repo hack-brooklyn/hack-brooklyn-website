@@ -8,14 +8,22 @@ body {
     rgba(255, 178, 110, 0.6) 90%
   );
 
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   margin: 0;
   padding: 0;
 
   * {
     color: white;
-    line-height: 1.5;
-  }
 
+  }
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
   h1 {
     width: 100%;
     text-align: center;
@@ -34,12 +42,10 @@ body {
   }
   p {
     font-size: 1.5rem;
-    line-height: 1.5;
+    line-height: 1;
   }
-  button.register {
-    margin-top: 1.5rem;
-  }
-  button.register,
+
+
   button.contact {
     color: white;
     padding: 0rem 2rem;
@@ -197,9 +203,8 @@ body {
     font-size: 3rem;
   }
 
-  #landing,
   #sponsors {
-    button.register,
+
     button.contact {
       margin-top: 2rem;
       padding: 1rem 3rem;

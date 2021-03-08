@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../scss/Schedule.scss";
+import "..styles/scss/Schedule.module.scss";
 
 function Schedule() {
   return (

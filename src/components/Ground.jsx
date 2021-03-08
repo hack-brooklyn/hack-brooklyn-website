@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../scss/Ground.scss";
+import "../styles/scss/Ground.module.scss";
 
 function Ground() {
   return (
