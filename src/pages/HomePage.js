@@ -63,9 +63,9 @@ function HomePage() {
         {/* <SocialGood /> */}
         {/* <Schedule /> */}
         <FAQ />
-        {/*<Team />
-        <Sponsors />
-        <Ground /> */}
+        <Team />
+        {/* <Sponsors /> */}
+        {/* <Ground /> */}
       </div>
     </Container>
   );
