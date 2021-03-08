@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Row, Button } from "react-bootstrap";
 // import Bloomberg from "assets/company-logos/bloomberg.png";
 // import Cookies from "assets/company-logos/insomniacookies.png";
 // import LinkedIn from "assets/company-logos/linkedin.png";
@@ -10,20 +10,20 @@ import React from "react";
 // import CTP from "assets/company-logos/ctp.png";
 // import TRiO from "assets/company-logos/trio.png";
 // import Calexico from "assets/company-logos/calexico.png";
-import "../styles/scss/Sponsors.module.scss";
+import styles from "../styles/scss/Sponsors.module.scss";
 
 function Sponsors() {
   return (
-    <div id="sponsors" className="text-center row">
+    <Row id="sponsors" className={styles.sponsors}>
       <div className="col-12">
         <h2 className="col-12 text-center">Sponsors & Friends</h2>
-        <p className="thanks">
+        <p className={styles.thanks}>
           Huge thanks to all of our sponsors and partners for their amazing
           support!
         </p>
         {/* prettier-ignore */}
         <div>
-          <p className="sponsor-coming-soon">Coming soon...</p>
+          <p className={styles.sponsor_coming_soon}>Coming soon...</p>
           {/* Silver Tier */}
           {/*<Sponsor sponsor="Google" tier="silver" logo={Google} link="https://about.google" />*/}
           {/*<Sponsor sponsor="LinkedIn" tier="silver" logo={LinkedIn} link="https://www.linkedin.com/company/linkedin" />*/}
@@ -41,7 +41,7 @@ function Sponsors() {
           {/*<Sponsor sponsor="Calexico" tier="bronze" logo={Calexico} link="https://www.calexico.com" />*/}
         </div>
 
-        <p className="sponsor">
+        <p className={styles.sponsor}>
           Care about empowering diverse students to tackle large-scale issues
           around the world?
           <br />
@@ -49,12 +49,12 @@ function Sponsors() {
         </p>
 
         <a href="mailto:sponsor@hackbrooklyn.org">
-          <button type="button" className="btn contact">
+          <Button className={styles.contact}>
             Contact Us
-          </button>
+          </Button>
         </a>
       </div>
-    </div>
+    </Row>
   );
 }
 

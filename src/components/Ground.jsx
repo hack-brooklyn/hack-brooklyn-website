@@ -1,10 +1,10 @@
 import React from "react";
 
-import "../styles/scss/Ground.module.scss";
+import styles from "../styles/scss/Ground.module.scss";
 
 function Ground() {
   return (
-    <div id="ground" />
+    <div className={styles.ground} />
   );
 }
 

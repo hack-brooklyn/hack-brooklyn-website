@@ -1,34 +1,43 @@
-// #sponsors {
-//   // background: linear-gradient(transparent 40%, rgba(242, 153, 74, 0.1) 100%);
-//   img {
-//     max-width: 15vw;
-//     max-height: 15vw;
-//     margin: 5% 10%;
-//   }
+.sponsors {
+    text-align: center;
+  // background: linear-gradient(transparent 40%, rgba(242, 153, 74, 0.1) 100%);
+  img {
+    max-width: 15vw;
+    max-height: 15vw;
+    margin: 5% 10%;
+  }
 
-//   img.silver {
-//     max-width: 33vw;
-//     max-height: 33vw;
-//   }
+  img.silver {
+    max-width: 33vw;
+    max-height: 33vw;
+  }
 
-//   p.thanks {
-//     color: purple;
-//     margin: 0 5%;
-//   }
+  .thanks {
+    color: purple;
+    margin: 0 5%;
+  }
 
-//   p.sponsor {
-//     color: orangered;
-//     margin: 0 5%;
-//   }
+  .sponsor {
+    color: orangered;
+    margin: 0 5%;
+  }
 
-//   button.contact {
-//     margin-top: 5vh;
-//   }
+  .contact {
+            margin-top: 1.5rem;
+      padding: 1rem 3rem;
+      font-size: 2em;
+      color: white;
+      padding: 0rem 2rem;
+      background-color: darkorange;
+      border-radius: 2rem;
+      font-family: "Nunito", sans-serif;
+    margin-top: 5vh;
+  }
 
-//   .sponsor-coming-soon {
-//     color: black;
-//     margin: 25rem auto;
-//     font-size: 2rem;
-//     font-weight: bold;
-//   }
-// }
+  .sponsor_coming_soon {
+    color: black;
+    margin: 25rem auto;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}

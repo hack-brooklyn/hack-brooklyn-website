@@ -64,8 +64,8 @@ function HomePage() {
         {/* <Schedule /> */}
         <FAQ />
         <Team />
-        {/* <Sponsors /> */}
-        {/* <Ground /> */}
+        <Sponsors />
+        <Ground />
       </div>
     </Container>
   );
