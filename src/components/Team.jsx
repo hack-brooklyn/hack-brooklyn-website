@@ -18,7 +18,7 @@ function Team() {
       <div>
         <Col className="col-12">
           <Col className="col-12 text-center"><h2>Meet the Organizers!</h2></Col>
-          <Col className={styles.organizers_year_heading}>
+          <Col className={styles.organizersYearHeading}>
             <h3>Hack Brooklyn 2021</h3>
           </Col>
           <Row id="organizers-listings" className={styles.listings}>
@@ -32,7 +32,7 @@ function Team() {
             ))}
           </Row>
           <Col>
-            <h3 className={styles.organizers_year_heading}>
+            <h3 className={styles.organizersYearHeading}>
               Hack Brooklyn 2020
           </h3></Col>
           <Row id="organizers-listings" className={styles.listings}>
@@ -48,7 +48,7 @@ function Team() {
           <Col>
             <h2 className="col-12 text-center">Meet the Contributors!</h2></Col>
           <Col>
-            <h3 className={styles.organizers_year_heading}>
+            <h3 className={styles.organizersYearHeading}>
               Hack Brooklyn 2020
           </h3></Col>
           <Row id="contributors-listings" className={styles.listings}>

@@ -27,7 +27,7 @@ function Landing() {
           renderer={({ days, hours, minutes, seconds, completed }) => {
             if (!completed) {
               return (
-                <div className={styles.countdown_clock}>
+                <div className={styles.countdownClock}>
                   <p> Priority applications open in</p>
                   <p>
                     {String(days) +

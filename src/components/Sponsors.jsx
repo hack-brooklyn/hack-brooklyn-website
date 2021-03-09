@@ -23,7 +23,7 @@ function Sponsors() {
         </p>
         {/* prettier-ignore */}
         <div>
-          <p className={styles.sponsor_coming_soon}>Coming soon...</p>
+          <p className={styles.sponsorComingSoon}>Coming soon...</p>
           {/* Silver Tier */}
           {/*<Sponsor sponsor="Google" tier="silver" logo={Google} link="https://about.google" />*/}
           {/*<Sponsor sponsor="LinkedIn" tier="silver" logo={LinkedIn} link="https://www.linkedin.com/company/linkedin" />*/}

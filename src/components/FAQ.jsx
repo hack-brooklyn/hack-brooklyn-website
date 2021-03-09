@@ -8,9 +8,9 @@ function FaqQuestion(props) {
     faqItem: { Question, Answer }
   } = props;
   return (
-    <div className={styles.faq_q_and_a}>
-      <h3 className={styles.faq_question}>{Question}</h3>
-      <p className={styles.faq_answer}>{Answer}</p>
+    <div className={styles.faqQandA}>
+      <h3 className={styles.faqQuestion}>{Question}</h3>
+      <p className={styles.faqAnswer}>{Answer}</p>
     </div>
   );
 }
@@ -31,7 +31,7 @@ function FAQ() {
 
   return (
     <Row id="faq" className={styles.faq}>
-      <h2 className={styles.faq_title}>Frequently Asked Questions</h2>
+      <h2 className={styles.faqTitle}>Frequently Asked Questions</h2>
       <div className="row">
         {data.map(faq => (
           <div className={width < 600 ? "col-12" : "col-md-6"}>

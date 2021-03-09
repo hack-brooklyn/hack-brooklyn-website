@@ -26,7 +26,7 @@ function About() {
         </h2>
       </div>
       <div className="col about-text">
-        <div className={styles.about_summary}>
+        <div className={styles.aboutSummary}>
           <p>
             Hack Brooklyn is where your quest begins. Step into a world of magic
             on
@@ -50,7 +50,7 @@ function About() {
           </p>
         </div>
       </div>
-      <div className={styles.about_image}>
+      <div className={styles.aboutImage}>
         <img className={styles.witch} src={"assets/side-art.svg"} alt="witch" />
       </div>
     </Row>
