@@ -7,15 +7,15 @@ import HomePage from './HomePage';
 
 import '../styles/scss/Reset.module.scss';
 const IndexPage = () => {
-    const [root_container, setRoot] = useState(null);
-    // waiting for the document
-    useEffect(() => {
-        setRoot(document.getElementById('root'))
-        // setRoot(true)
-    }, []);
-    // console.log(root)
+
+    if (typeof document !== 'undefined') {
+        const root_document = document.getElementById('__next');
+        console.log("Log 1")
+        return (ReactDOM.render(<HomePage />, root_document));
+    };
+
     return <HomePage />
-    // return (ReactDOM.render(<HomePage />, root_container));
+
 }
 // const root = get_root();
 export default IndexPage
