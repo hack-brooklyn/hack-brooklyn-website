@@ -30,7 +30,7 @@ function FAQ() {
   ];
 
   return (
-    <Row className={styles.faq}>
+    <Row id="faq" className={styles.faq}>
       <h2 className={styles.faq_title}>Frequently Asked Questions</h2>
       <div className="row">
         {data.map(faq => (

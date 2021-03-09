@@ -19,7 +19,7 @@ function About() {
   ]; */
 
   return (
-    <Row className={styles.about}>
+    <Row id="about" className={styles.about}>
       <div className="col-12">
         <h2 className="about-header text-center">
           Welcome to <strong className={styles.bold}>Hack Brooklyn!</strong>

@@ -6,7 +6,7 @@ import Countdown from "react-countdown";
 
 function Landing() {
   return (
-    <Row className={styles.landing}>
+    <Row id="landing" className={styles.landing}>
       <div className="col-12">
         <p className={styles.intro}>
           <Zoom cascade duration={3000}>
@@ -50,7 +50,7 @@ function Landing() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Button type="button" variant="success" className={styles.register} >Apply Now</Button>
+                    <button type="button" className={styles.register} >Apply Now</button>
 
                   </a>
                 </>

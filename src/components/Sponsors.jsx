@@ -49,9 +49,9 @@ function Sponsors() {
         </p>
 
         <a href="mailto:sponsor@hackbrooklyn.org">
-          <Button className={styles.contact}>
+          <button className={styles.contact}>
             Contact Us
-          </Button>
+          </button>
         </a>
       </div>
     </Row>
