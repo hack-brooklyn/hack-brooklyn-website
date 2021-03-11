@@ -13,14 +13,12 @@ function Landing() {
             Where Your Fantasies Come Alive
           </Zoom>
         </p>
-        <h1 >
+        <h1>
           HACK<span className={styles.brooklyn}>BROOKLYN</span>
         </h1>
 
         <p className="date-and-time">April 23rd - April 25th</p>
-        <p>Virtual hackathon hosted by Brooklyn College
-
-</p>
+        <p>Virtual hackathon hosted by Brooklyn College</p>
 
         <Countdown
           date={new Date("Feb 19, 2021 00:00:00 EST")}
@@ -50,8 +48,9 @@ function Landing() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button type="button" className={styles.register} >Apply Now</button>
-
+                    <button type="button" className={styles.register}>
+                      Apply Now
+                    </button>
                   </a>
                 </>
               );
@@ -59,7 +58,7 @@ function Landing() {
           }}
         />
       </div>
-    </Row >
+    </Row>
   );
 }
 

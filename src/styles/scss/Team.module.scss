@@ -2,45 +2,44 @@
   padding: 0 7.5vw;
   // background: linear-gradient(transparent 40%, #f8bfd5 100%);
 
-  h1 {
+  h2 {
     margin-bottom: 1rem;
+    font-family: "Nunito", sans-serif;
   }
-
-
-
-
 }
-  .organizersYearHeading {
-      text-align: center;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }  
+.organizersYearHeading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
 .avatar {
-    padding: 1em;
+  padding: 1em;
 
-
-    a {
-      &:hover {
-        color: #902ff0;
-      }
+  a {
+    &:hover {
+      color: #902ff0;
     }
   }
-  
-  .listings {
-    justify-content: center;
-    margin-bottom: 2em;
-  }
-      .avatar_logo{
-      width: 100%;
-      height: auto;
-      border-radius: 50%;
-      border: 3px solid white;
-    }
-    .avatar_name {
-      font-size: 1.5em;
-      font-family: "Nunito", sans-serif;
-      color: #383d41;
-    }
+}
+
+.listings {
+  justify-content: center;
+  margin-bottom: 2em;
+  padding-left: 10vmin;
+  padding-right: 10vmin;
+}
+.avatar_logo {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+.avatar_name {
+  font-size: 2em;
+  font-family: "Nunito", sans-serif;
+  color: #383d41;
+  margin-top: 1.5rem;
+}
 
 @media (max-device-width: 500px) {
   .team {

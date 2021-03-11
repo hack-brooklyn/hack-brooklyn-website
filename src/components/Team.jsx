@@ -14,56 +14,48 @@ function Team() {
     setWidth(window.screen.width);
   }, []);
   return (
-    <Row className={styles.team} className="row">
+    <Row className={styles.team}>
       <div>
         <Col className="col-12">
-          <Col className="col-12 text-center"><h2>Meet the Organizers!</h2></Col>
+          <Col className="col-12 text-center">
+            <h2>Meet the Organizers!</h2>
+          </Col>
           <Col className={styles.organizersYearHeading}>
             <h3>Hack Brooklyn 2021</h3>
           </Col>
           <Row id="organizers-listings" className={styles.listings}>
             {Organizers2021.map((person) => (
-              <Col
-                className={width < 500 ? "col-6" : "col-4"}
-                align="center"
-              >
+              <Col className={width < 500 ? "col-6" : "col-3"} align="center">
                 <ProfileView person={person} />
               </Col>
             ))}
           </Row>
           <Col>
-            <h3 className={styles.organizersYearHeading}>
-              Hack Brooklyn 2020
-          </h3></Col>
+            <h3 className={styles.organizersYearHeading}>Hack Brooklyn 2020</h3>
+          </Col>
           <Row id="organizers-listings" className={styles.listings}>
             {Organizers2020.map((person) => (
-              <div
-                className={width < 500 ? "col-6" : "col-3"}
-                align="center"
-              >
+              <Col className={width < 500 ? "col-6" : "col-3"} align="center">
                 <ProfileView person={person} />
-              </div>
+              </Col>
             ))}
           </Row>
           <Col>
-            <h2 className="col-12 text-center">Meet the Contributors!</h2></Col>
+            <h2 className="col-12 text-center">Meet the Contributors!</h2>
+          </Col>
           <Col>
-            <h3 className={styles.organizersYearHeading}>
-              Hack Brooklyn 2020
-          </h3></Col>
+            <h3 className={styles.organizersYearHeading}>Hack Brooklyn 2020</h3>
+          </Col>
           <Row id="contributors-listings" className={styles.listings}>
             {Contributors2020.map((person) => (
-              <div
-                className={width < 500 ? "col-6" : "col-3"}
-                align="center"
-              >
+              <Col className={width < 500 ? "col-6" : "col-3"} align="center">
                 <ProfileView person={person} />
-              </div>
+              </Col>
             ))}
           </Row>
         </Col>
       </div>
-    </Row >
+    </Row>
   );
 }
 

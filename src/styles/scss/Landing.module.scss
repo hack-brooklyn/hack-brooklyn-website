@@ -1,10 +1,9 @@
 @font-face {
   font-family: "Feldicouth Norm";
   src: url("../../../public/assets/fonts/feldicouth-norm.woff") format("woff");
-
 }
 
-.landing {  
+.landing {
   background: #fff;
   background-image: url("../../../public/assets/landing-background.svg");
   background-size: cover;
@@ -13,19 +12,19 @@
   min-height: 100vh;
   text-align: center;
   padding-top: 9%;
-  
-  
-  
-    .register {
-      margin-top: 1.5rem;
-      padding: 1rem 3rem;
-      font-size: 2em;
-      // color: white;
-      padding: 0rem 2rem;
-      background-color: darkorange;
-      border-radius: 1rem;
-      font-family: "Nunito", sans-serif;
-    }
+
+  .register {
+    margin-top: 1.5rem;
+    padding: 1rem 3rem;
+    font-size: 2em;
+    // color: white;
+    padding: 0rem 2rem;
+    background-color: orange;
+    border-radius: 1rem;
+    font-family: "Nunito", sans-serif;
+    border: transparent;
+  }
+
   .intro {
     letter-spacing: 2px;
     font-family: "Papyrus", "Feldicouth Norm", fantasy;
@@ -33,7 +32,7 @@
     font-weight: bold;
   }
 
-h1 {
+  h1 {
     font-family: "Luckiest Guy", sans-serif;
     font-size: 7rem;
     -webkit-background-clip: text;
@@ -44,9 +43,9 @@ h1 {
     margin-top: 2rem;
     margin-bottom: 0.5rem;
     letter-spacing: 7.5px;
-      user-select: none;
-  cursor: default;
-  line-height:1;
+    user-select: none;
+    cursor: default;
+    line-height: 1;
   }
 
   .brooklyn {
@@ -140,7 +139,7 @@ h1 {
       margin-top: 3rem;
       margin-bottom: -0.5rem;
     }
-  
+
     .countdownClock {
       color: #fff;
       font-size: 3rem;

@@ -30,10 +30,10 @@ function About() {
           <p>
             Hack Brooklyn is where your quest begins. Step into a world of magic
             on
-            <strong className={styles.bold}> April 23rd </strong>where over 500 of the
-            brightest students across the world will come together to build
-            innovative solutions for causes ranging from homelessness to the
-            lack of diversity.
+            <strong className={styles.bold}> April 23rd </strong>where over 500
+            of the brightest students across the world will come together to
+            build innovative solutions for causes ranging from homelessness to
+            the lack of diversity.
           </p>
           <br />
           <p>
