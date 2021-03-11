@@ -1,13 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Nav, Navbar, Container } from "react-bootstrap";
-
 import "typeface-luckiest-guy";
 import "typeface-nunito";
 import "typeface-quicksand";
 import "typeface-delius";
-
-
-import "../styles/scss/Sponsors.module.scss";
 
 import Landing from "../components/Landing";
 import About from "../components/About";
@@ -17,6 +13,7 @@ import FAQ from "../components/FAQ";
 import Sponsors from "../components/Sponsors";
 import Team from "../components/Team";
 import Ground from "../components/Ground";
+import "../styles/scss/Sponsors.module.scss";
 
 function HomePage() {
   const [scrolled, setScrolled] = useState(false);

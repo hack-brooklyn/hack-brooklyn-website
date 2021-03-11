@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Row } from "react-bootstrap";
+
 import styles from "../styles/scss/FAQ.module.scss";
 import FAQData from "../data/FAQ";
 
@@ -33,8 +34,8 @@ function FAQ() {
     <Row id="faq" className={styles.faq}>
       <h2 className={styles.faqTitle}>Frequently Asked Questions</h2>
       <div className="row">
-        {data.map(faq => (
-          <div className={width < 600 ? "col-12" : "col-md-6"}>
+        {data.map((faq, index) => (
+          <div className={width < 600 ? "col-12" : "col-md-6"} key={index}>
             <FaqQuestion faqItem={faq} />
           </div>
         ))}

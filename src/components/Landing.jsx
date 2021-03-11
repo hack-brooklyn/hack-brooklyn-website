@@ -1,8 +1,9 @@
 import React from "react";
 import { Row, Button } from "react-bootstrap";
-import styles from "../styles/scss/Landing.module.scss";
 import Zoom from "react-reveal/Zoom";
 import Countdown from "react-countdown";
+
+import styles from "../styles/scss/Landing.module.scss";
 
 function Landing() {
   return (
@@ -26,7 +27,7 @@ function Landing() {
             if (!completed) {
               return (
                 <div className={styles.countdownClock}>
-                  <p> Priority applications open in</p>
+                  <p>Priority applications open in</p>
                   <p>
                     {String(days) +
                       " days, " +

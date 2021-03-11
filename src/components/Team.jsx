@@ -1,18 +1,20 @@
 import React, { useState, useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
+
 import {
   Organizers2021,
   Organizers2020,
   Contributors2020,
 } from "../data/Contributor_Info";
 import styles from "../styles/scss/Team.module.scss";
-// import defaultPic from "assets/web-dev-pics/test_avatar.png";
 
 function Team() {
   const [width, setWidth] = useState(null);
+
   useEffect(() => {
     setWidth(window.screen.width);
   }, []);
+
   return (
     <Row className={styles.team}>
       <div>
@@ -24,8 +26,8 @@ function Team() {
             <h3>Hack Brooklyn 2021</h3>
           </Col>
           <Row id="organizers-listings" className={styles.listings}>
-            {Organizers2021.map((person) => (
-              <Col className={width < 500 ? "col-6" : "col-3"} align="center">
+            {Organizers2021.map((person, index) => (
+              <Col className={width < 500 ? "col-6" : "col-3"} align="center" key={index}>
                 <ProfileView person={person} />
               </Col>
             ))}
@@ -34,8 +36,8 @@ function Team() {
             <h3 className={styles.organizersYearHeading}>Hack Brooklyn 2020</h3>
           </Col>
           <Row id="organizers-listings" className={styles.listings}>
-            {Organizers2020.map((person) => (
-              <Col className={width < 500 ? "col-6" : "col-3"} align="center">
+            {Organizers2020.map((person, index) => (
+              <Col className={width < 500 ? "col-6" : "col-3"} align="center" key={index}>
                 <ProfileView person={person} />
               </Col>
             ))}
@@ -47,8 +49,8 @@ function Team() {
             <h3 className={styles.organizersYearHeading}>Hack Brooklyn 2020</h3>
           </Col>
           <Row id="contributors-listings" className={styles.listings}>
-            {Contributors2020.map((person) => (
-              <Col className={width < 500 ? "col-6" : "col-3"} align="center">
+            {Contributors2020.map((person, index) => (
+              <Col className={width < 500 ? "col-6" : "col-3"} align="center" key={index}>
                 <ProfileView person={person} />
               </Col>
             ))}

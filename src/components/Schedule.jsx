@@ -15,7 +15,6 @@ function Schedule() {
 }
 export default Schedule;
 
-// THIS WILL DO FOR NOW LOL
 const TempSpace = () => {
   return (
     <div>

@@ -1,5 +1,7 @@
 import React from "react";
 import { Row, Button } from "react-bootstrap";
+
+import styles from "../styles/scss/Sponsors.module.scss";
 // import Bloomberg from "assets/company-logos/bloomberg.png";
 // import Cookies from "assets/company-logos/insomniacookies.png";
 // import LinkedIn from "assets/company-logos/linkedin.png";
@@ -10,7 +12,6 @@ import { Row, Button } from "react-bootstrap";
 // import CTP from "assets/company-logos/ctp.png";
 // import TRiO from "assets/company-logos/trio.png";
 // import Calexico from "assets/company-logos/calexico.png";
-import styles from "../styles/scss/Sponsors.module.scss";
 
 function Sponsors() {
   return (
