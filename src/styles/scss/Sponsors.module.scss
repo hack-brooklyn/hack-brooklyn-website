@@ -1,0 +1,52 @@
+.sponsors {
+  text-align: center;
+  // background: linear-gradient(transparent 40%, rgba(242, 153, 74, 0.1) 100%);
+  img {
+    max-width: 15vw;
+    max-height: 15vw;
+    margin: 5% 10%;
+  }
+
+  img.silver {
+    max-width: 33vw;
+    max-height: 33vw;
+  }
+
+  .thanks {
+    color: purple;
+    margin: 0 5%;
+  }
+
+  .sponsor {
+    color: orangered;
+    margin: 0 5%;
+    line-height: 2rem;
+  }
+
+  .contact {
+    margin-top: 1.5rem;
+    padding: 1rem 3rem;
+    font-size: 2em;
+    // color: white;
+    padding: 0rem 2rem;
+    background-color: darkorange;
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0);
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    font-family: "Nunito", sans-serif;
+    margin-top: 5vh;
+  }
+
+  .contact:hover {
+    background-color: #e852ca;
+    color: white;
+    border: 1px solid white;
+  }
+
+  .sponsorComingSoon {
+    color: black;
+    margin: 25rem auto;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
