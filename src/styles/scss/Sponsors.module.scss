@@ -31,9 +31,16 @@
     padding: 0rem 2rem;
     background-color: darkorange;
     border-radius: 1rem;
-    border: transparent;
+    border: 1px solid rgba(255, 255, 255, 0);
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     font-family: "Nunito", sans-serif;
     margin-top: 5vh;
+  }
+
+  .contact:hover {
+    background-color: #e852ca;
+    color: white;
+    border: 1px solid white;
   }
 
   .sponsorComingSoon {

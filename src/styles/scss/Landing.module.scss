@@ -22,7 +22,18 @@
     background-color: orange;
     border-radius: 1rem;
     font-family: "Nunito", sans-serif;
-    border: transparent;
+    border: 1px solid rgba(255, 255, 255, 0);
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+
+  .register:hover {
+    background-color: #e852ca;
+    color: white;
+    border: 1px solid white;
+  }
+
+  .locater:hover {
+    color: #e852c9c7;
   }
 
   .intro {
@@ -86,16 +97,6 @@
     font-size: 2rem;
     font-weight: bold;
     margin-top: 1rem;
-  }
-
-  .register:hover {
-    background-color: #e852ca;
-    color: white;
-    border: 1px solid white;
-  }
-
-  .locater:hover {
-    color: #e852c9c7;
   }
 }
 
