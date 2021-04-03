@@ -3,12 +3,23 @@
   img {
     max-width: 15vw;
     max-height: 15vw;
-    margin: 5% 10%;
   }
 
   img.silver {
-    max-width: 33vw;
-    max-height: 33vw;
+    max-width: 25vw;
+    max-height: 25vw;
+  }
+
+  img.gold {
+    max-width: 40vw;
+    max-height: 40vw;
+  }
+
+  p.sponsor-tier-text {
+    margin: 1rem auto;
+    font-weight: bold;
+    font-size: 2rem;
+    color: purple;
   }
 
   p.thanks {
@@ -19,6 +30,14 @@
   p.sponsor {
     color: orangered;
     margin: 0 5%;
+  }
+
+  div.sponsor-images {
+    margin: 2rem auto;
+  }
+
+  div.sponsor-tier:not(:last-child) {
+    margin: 0 auto 4rem;
   }
 
   button.contact {

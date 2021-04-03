@@ -1,15 +1,7 @@
 import React from "react";
 
-import Bloomberg from "../assets/company-logos/bloomberg.png";
-import Cookies from "../assets/company-logos/insomniacookies.png";
-import LinkedIn from "../assets/company-logos/linkedin.png";
-import Etsy from "../assets/company-logos/etsy.png";
-import DigitalOcean from "../assets/company-logos/digitalocean.png";
-import Google from "../assets/company-logos/google.png";
-import WiTNY from "../assets/company-logos/witny.png";
-import CTP from "../assets/company-logos/ctp.png";
-import TRiO from "../assets/company-logos/trio.png";
-import Calexico from "../assets/company-logos/calexico.png";
+import Cisco from "../assets/company-logos/cisco.png";
+import Cuny2x from "../assets/company-logos/cuny-2x.png";
 import "../scss/Sponsors.scss";
 
 function Sponsors() {
@@ -21,24 +13,29 @@ function Sponsors() {
           Huge thanks to all of our sponsors and partners for their amazing
           support!
         </p>
-        {/* prettier-ignore */}
-        <div>
-          <p className="sponsor-coming-soon">Coming soon...</p>
-          {/* Silver Tier */}
-          {/*<Sponsor sponsor="Google" tier="silver" logo={Google} link="https://about.google" />*/}
-          {/*<Sponsor sponsor="LinkedIn" tier="silver" logo={LinkedIn} link="https://www.linkedin.com/company/linkedin" />*/}
-          {/*<Sponsor sponsor="Etsy" tier="silver" logo={Etsy} link="https://www.etsy.com/about" />*/}
-          {/*<Sponsor sponsor="Bloomberg" tier="silver" logo={Bloomberg} link="https://www.bloomberg.com" />*/}
-          {/*<Sponsor sponsor="WiTNY" tier="silver" logo={WiTNY} link="https://witny.org" />*/}
-          {/*<Sponsor sponsor="DigitalOcean" tier="silver" logo={DigitalOcean} link="http://do.co/studenthackathon" />*/}
 
-          {/*<br />*/}
+        <div className="sponsor-images">
+          {/* Gold Tier */}
+          <div className="sponsor-tier">
+            <p className="sponsor-tier-text">Gold Sponsors</p>
+            <Sponsor
+              sponsor="Cisco"
+              tier="gold"
+              logo={Cisco}
+              link="https://www.cisco.com"
+            />
+          </div>
 
-          {/*/!* Bronze Tier and Friends *!/*/}
-          {/*<Sponsor sponsor="Insomnia Cookies" tier="bronze" logo={Cookies} link="https://insomniacookies.com/about" />*/}
-          {/*<Sponsor sponsor="CUNY Tech Prep" tier="bronze" logo={CTP} link="https://cunytechprep.nyc" />*/}
-          {/*<Sponsor sponsor="TRiO" tier="bronze" logo={TRiO} link="https://www2.ed.gov/programs/triostudsupp/index.html" />*/}
-          {/*<Sponsor sponsor="Calexico" tier="bronze" logo={Calexico} link="https://www.calexico.com" />*/}
+          {/* Bronze Tier and Friends */}
+          <div className="sponsor-tier">
+            <p className="sponsor-tier-text">Bronze Sponsors</p>
+            <Sponsor
+              sponsor="CUNY 2X"
+              tier="bronze"
+              logo={Cuny2x}
+              link="https://www.techtalentpipeline.nyc/cs-doubling"
+            />
+          </div>
         </div>
 
         <p className="sponsor">
@@ -62,7 +59,7 @@ const Sponsor = (props) => {
   const tier = props.tier;
 
   const SponsorSpacing = () => {
-    if (tier === "silver") {
+    if (tier === "silver" || tier === "gold") {
       return <br />;
     } else {
       return <span />;
