@@ -11,8 +11,6 @@ import "../scss/Sponsors.scss";
 
 import Landing from "../components/Landing";
 import About from "../components/About";
-// import SocialGood from "../components/SocialGood";
-// import Schedule from "../components/Schedule";
 import FAQ from "../components/FAQ";
 import Sponsors from "../components/Sponsors";
 import Team from "../components/Team";
@@ -53,15 +51,15 @@ function HomePage() {
               <Nav.Link href="#landing">Home</Nav.Link>
               <Nav.Link href="#about">About</Nav.Link>
               <Nav.Link href="#faq">FAQ</Nav.Link>
+              <Nav.Link href="#team">Team</Nav.Link>
               <Nav.Link href="#sponsors">Sponsors</Nav.Link>
+              <Nav.Link href="mailto:contact@hackbrooklyn.org">Contact Us</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
 
         <Landing />
         <About />
-        {/* <SocialGood /> */}
-        {/* <Schedule /> */}
         <FAQ />
         <Team />
         <Sponsors />
