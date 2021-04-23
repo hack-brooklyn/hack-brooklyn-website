@@ -5,7 +5,7 @@ import FAQData from "../data/FAQ";
 
 function FaqQuestion(props) {
   const {
-    faqItem: { Question, Answer }
+    faqItem: { Question, Answer },
   } = props;
   return (
     <div className="faq-q-and-a">
@@ -24,15 +24,15 @@ function FAQ() {
     FAQData[2],
     FAQData[3],
     FAQData[4],
-    FAQData[5]
+    FAQData[5],
   ];
 
   return (
     <div id="faq">
       <h2 className="faq-title">Frequently Asked Questions</h2>
       <div className="row">
-        {data.map(faq => (
-          <div className={width < 600 ? "col-12" : "col-md-6"}>
+        {data.map((faq) => (
+          <div className={width < 600 ? "col-md-12" : "col-md-6"}>
             <FaqQuestion faqItem={faq} />
           </div>
         ))}
