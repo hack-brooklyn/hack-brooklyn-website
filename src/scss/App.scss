@@ -3,9 +3,10 @@ body {
   background: linear-gradient(
     180deg,
     #ffffff 5%,
-    rgba(109, 73, 255, 0.6) 25%,
-    rgba(255, 145, 231, 0.5) 85%,
-    rgba(255, 178, 110, 0.6) 90%
+    rgba(109, 73, 255, 0.5) 10%,
+    rgba(109, 73, 255, 0.6) 85%,
+    rgba(255, 145, 231, 0.5) 90%,
+    rgba(255, 178, 110, 0.6) 95%
   );
 
   margin: 0;
@@ -32,13 +33,16 @@ body {
     color: #9400d3;
     margin-bottom: 1em;
   }
+
   p {
     font-size: 1.5rem;
     line-height: 1.5;
   }
+
   button.register {
     margin-top: 1.5rem;
   }
+
   button.register,
   button.contact {
     color: white;
@@ -150,10 +154,10 @@ body {
     background: linear-gradient(
       180deg,
       #ffffff 5%,
-      rgba(109, 73, 255, 0.5) 20%,
-      rgba(109, 73, 255, 0.6) 50%,
-      rgba(255, 145, 231, 0.6) 80%,
-      rgba(255, 178, 110, 0.6) 95%
+      rgba(109, 73, 255, 0.5) 15%,
+      rgba(109, 73, 255, 0.6) 85%,
+      rgba(255, 145, 231, 0.5) 90%,
+      rgba(255, 178, 110, 0.6) 97.5%
     );
   }
 
