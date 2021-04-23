@@ -1,38 +1,74 @@
 #sponsors {
   // background: linear-gradient(transparent 40%, rgba(242, 153, 74, 0.1) 100%);
+
   img {
-    max-width: 15vw;
-    max-height: 15vw;
+    margin: 0 1rem 2rem;
+  }
+
+  img.bronze {
+    max-width: 50vw;
+    max-height: 50vw;
+
+    @media (min-width: 992px) {
+      max-width: 20vw;
+      max-height: 20vw;
+    }
   }
 
   img.silver {
-    max-width: 25vw;
-    max-height: 25vw;
+    max-width: 75vw;
+    max-height: 75vw;
+
+    @media (min-width: 992px) {
+      max-width: 30vw;
+      max-height: 30vw;
+    }
   }
 
   img.gold {
-    max-width: 40vw;
-    max-height: 40vw;
+    max-width: 90vw;
+    max-height: 90vw;
+
+    @media (min-width: 992px) {
+      max-width: 50vw;
+      max-height: 50vw;
+    }
   }
 
   p.sponsor-tier-text {
     margin: 1rem auto;
+    font-size: 5rem;
     font-weight: bold;
-    font-size: 2rem;
     color: purple;
+
+    @media (min-width: 992px) {
+      font-size: 2rem;
+    }
   }
 
   p.thanks {
+    font-size: 3rem;
     color: purple;
-    margin: 0 5%;
+    margin: 0 5% 3rem;
+
+    @media (min-width: 992px) {
+      font-size: 2rem;
+    }
   }
 
   p.sponsor {
-    color: orangered;
     margin: 0 5%;
+    font-size: 3rem;
+    color: orangered;
+
+    @media (min-width: 992px) {
+      margin: 0 auto;
+      font-size: 2rem;
+      max-width: 50rem;
+    }
   }
 
-  div.sponsor-images {
+  div.sponsor-container {
     margin: 2rem auto;
   }
 
@@ -49,5 +85,16 @@
     margin: 25rem auto;
     font-size: 2rem;
     font-weight: bold;
+  }
+
+  .sponsor-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 992px) {
+      flex-direction: row;
+    }
   }
 }
