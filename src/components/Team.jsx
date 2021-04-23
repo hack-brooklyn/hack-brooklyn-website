@@ -1,71 +1,134 @@
-import React, { useState } from "react";
+import React from "react";
 
 import {
   Organizers2021,
   Organizers2020,
   Contributors2020,
+  Contributors2021,
+  SoftwareEngineersPlaza2021,
+  SoftwareEngineersWebsite2021,
+  SoftwareEngineersWebsite2020,
 } from "../data/Contributor_Info";
 import "../scss/Team.scss";
-import defaultPic from "../assets/web-dev-pics/test_avatar.png";
+
+import defaultPic from "../assets/person.svg";
 
 function Team() {
   return (
-    <div id="team" className="row">
-      <div>
-        <div className="col-12">
-          <h2 className="col-12 text-center">Meet the Organizers!</h2>
-          <h3 className="col-12 text-center organizers-year-heading">
-            Hack Brooklyn 2021
+    <div id="team">
+      {/* Organizers */}
+      <section>
+        <h2>Meet the Organizers!</h2>
+
+        <div className="organizing-year">
+          <h3 className="organizers-year-heading">Hack Brooklyn 2021</h3>
+          <ProfileListings people={Organizers2021} />
+        </div>
+
+        <div className="organizing-year">
+          <h3 className="organizers-year-heading">Hack Brooklyn 2020</h3>
+          <ProfileListings people={Organizers2020} />
+        </div>
+      </section>
+
+      {/* Contributors */}
+      <section>
+        <h2>Meet the Contributors!</h2>
+
+        <div className="organizing-year">
+          <h3 className="organizers-year-heading">Hack Brooklyn 2021</h3>
+          <ProfileListings people={Contributors2021} />
+        </div>
+
+        <div className="organizing-year">
+          <h3 className="organizers-year-heading">Hack Brooklyn 2020</h3>
+          <ProfileListings people={Contributors2020} />
+        </div>
+      </section>
+
+      {/* Software Engineers */}
+      <section>
+        <h2>Meet the Software Engineers!</h2>
+
+        <div className="organizing-year">
+          <h3 className="organizers-year-heading">Hack Brooklyn 2021</h3>
+          <h3 className="organizers-duration-heading">
+            (December 2020 ⁠– May 2021)
           </h3>
-          <div id="organizers-listings" className="row listings">
-            {Organizers2021.map((person) => (
-              <div
-                className={window.screen.width < 500 ? "col-6" : "col-4"}
-                align="center"
+
+          {/* Project: Hack Brooklyn Plaza */}
+          <div>
+            <h4 className="organizers-project-heading">
+              <a
+                href="https://github.com/hack-brooklyn/hack-brooklyn-plaza"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <ProfileView person={person} />
-              </div>
-            ))}
+                Hack Brooklyn Plaza
+              </a>
+            </h4>
+            <ProfileListings people={SoftwareEngineersPlaza2021} />
           </div>
 
-          <h3 className="col-12 text-center organizers-year-heading">
-            Hack Brooklyn 2020
-          </h3>
-          <div id="organizers-listings" className="row listings">
-            {Organizers2020.map((person) => (
-              <div
-                className={window.screen.width < 500 ? "col-6" : "col-3"}
-                align="center"
+          {/* Project: Hack Brooklyn Website */}
+          <div>
+            <h4 className="organizers-project-heading">
+              <a
+                href="https://github.com/hack-brooklyn/hackbrooklyn.org"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <ProfileView person={person} />
-              </div>
-            ))}
-          </div>
-
-          <h2 className="col-12 text-center">Meet the Contributors!</h2>
-          <h3 className="col-12 text-center organizers-year-heading">
-            Hack Brooklyn 2020
-          </h3>
-          <div id="contributors-listings" className="row listings">
-            {Contributors2020.map((person) => (
-              <div
-                className={window.screen.width < 500 ? "col-6" : "col-3"}
-                align="center"
-              >
-                <ProfileView person={person} />
-              </div>
-            ))}
+                Hack Brooklyn Website
+              </a>
+            </h4>
+            <ProfileListings people={SoftwareEngineersWebsite2021} />
           </div>
         </div>
-      </div>
+
+        <div className="organizing-year">
+          <h3 className="organizers-year-heading">Hack Brooklyn 2020</h3>
+          <h3 className="organizers-duration-heading">
+            (December 2019 ⁠– April 2020)
+          </h3>
+
+          {/* Project: Hack Brooklyn Website */}
+          <div>
+            <h4 className="organizers-project-heading">
+              <a
+                href="https://github.com/hack-brooklyn/hackbrooklyn.org/tree/2020"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Hack Brooklyn Website
+              </a>
+            </h4>
+            <ProfileListings people={SoftwareEngineersWebsite2020} />
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+function ProfileListings(props) {
+  const { people } = props;
+
+  return (
+    <div className="row listings">
+      {people.map((person) => (
+        <div className={window.screen.width < 992 ? "col-6" : "col-md-3"}>
+          <ProfileView person={person} />
+        </div>
+      ))}
     </div>
   );
 }
 
 function ProfileView(props) {
   const { first, last, link, pic } = props.person;
+
   return (
-    <div className="avatar">
+    <article className="avatar">
       <a href={link || "#"} target="_blank" rel="noopener noreferrer">
         <img
           src={pic || defaultPic}
@@ -75,10 +138,9 @@ function ProfileView(props) {
 
         <p className="avatar-name">
           {first} {last}
-          <br />
         </p>
       </a>
-    </div>
+    </article>
   );
 }
 

@@ -25,6 +25,9 @@ export const Organizers2021 = [
     link: "https://www.linkedin.com/in/dennis-klimenkov",
     pic: "/team-pics/dennis.jpg",
   },
+  {
+    first: "Yasmine",
+  },
 ];
 
 export const Organizers2020 = [
@@ -72,6 +75,15 @@ export const Organizers2020 = [
   },
 ];
 
+export const Contributors2021 = [
+  {
+    first: "Anastasia",
+    last: "Gusenkov",
+    link: "https://www.linkedin.com/in/anastasia-gusenkov/",
+    pic: "/team-pics/anastasia.jpg",
+  }
+];
+
 export const Contributors2020 = [
   {
     first: "Junninho",
@@ -108,5 +120,78 @@ export const Contributors2020 = [
     last: "Sadique",
     link: "https://www.linkedin.com/in/mehaksadique/",
     pic: "/team-pics/mehak.jpeg",
+  },
+];
+
+export const SoftwareEngineersPlaza2021 = [
+  {
+    first: "Kevin",
+    last: "Tam",
+    link: "https://kevintamcs.com",
+    pic: "/team-pics/kevin.jpg",
+  },
+  {
+    first: "Derick",
+    last: "Fan",
+    link: "https://derickfan.dev",
+    pic: "/team-pics/derick.jpg",
+  }
+];
+
+export const SoftwareEngineersWebsite2021 = [
+  {
+    first: "Kevin",
+    last: "Tam",
+    link: "https://kevintamcs.com",
+    pic: "/team-pics/kevin.jpg",
+  },
+  {
+    first: "Sagar",
+    last: "Shrestha",
+    link: "https://sgr2848.github.io/sagr",
+  },
+  {
+    first: "Gezim",
+    last: "Hakramaj",
+    link: "https://github.com/GezimHakramaj",
+  },
+];
+
+export const SoftwareEngineersWebsite2020 = [
+  {
+    first: "Kevin",
+    last: "Tam",
+    link: "https://kevintamcs.com",
+    pic: "/team-pics/kevin.jpg",
+  },
+  {
+    first: "Shahzoda",
+    last: "Davlatova",
+    link: "https://github.com/Shahzzoda",
+    pic: "/team-pics/shahzoda.jpeg",
+  },
+  {
+    first: "Shahidullah",
+    last: "Rahman",
+    link: "https://github.com/siam132",
+    pic: "/team-pics/siam.jpg",
+  },
+  {
+    first: "Allina",
+    last: "Khan",
+    link: "https://github.com/allina606",
+    pic: "/team-pics/allina.jpeg",
+  },
+  {
+    first: "Junninho",
+    last: "Thomas",
+    link: "https://github.com/junninho",
+    pic: "/team-pics/junninho.jpeg",
+  },
+  {
+    first: "Stephon",
+    last: "Lawrence",
+    link: "https://github.com/stephonlawrence",
+    pic: "/team-pics/stephon.jpg",
   },
 ];
