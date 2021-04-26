@@ -21,13 +21,13 @@ export const Organizers2021 = [
     first: "Neissa",
     last: "Dorsinville",
     link: "https://www.linkedin.com/in/neissa-dorsinville",
-    pic: "https://media-exp1.licdn.com/dms/image/C4D03AQEU03Yoaq9jgw/profile-displayphoto-shrink_800_800/0/1596560614353?e=1625097600&v=beta&t=IwW9ldbaRycYQovEJq89Q4Lr2NGato1QuI5YJndYlAY",
+    pic: "/team-pics/neissa.jpeg"
   },
   {
     first: "Yasmine",
     last: "Kamel",
     link: "https://www.yasminecodes.com/",
-    pic: "https://www.yasminecodes.com/assets/index2.d13c7805cafe7d61dc3351c398dec66d.png"
+    pic: "/team-pics/yasmine.jpg"
   },
 ];
 
