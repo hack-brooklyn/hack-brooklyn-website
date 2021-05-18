@@ -2,7 +2,7 @@ import React from "react";
 
 import "../scss/Landing.scss";
 import Zoom from "react-reveal/Zoom";
-import Countdown from "react-countdown";
+// import Countdown from "react-countdown";
 
 function Landing() {
   return (
@@ -20,7 +20,18 @@ function Landing() {
         <p className="date-and-time">April 23rd - April 25th</p>
         <p>Virtual hackathon hosted by Brooklyn College</p>
 
-        <Countdown
+        <a
+          href="https://plaza.hackbrooklyn.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button type="button" className="btn register">
+            Enter Hack Brooklyn Plaza
+          </button>
+        </a>
+
+        {/* Uncomment when applications are open again for next year */}
+        {/* <Countdown
           date={new Date("Feb 19, 2021 00:00:00 EST")}
           renderer={({ days, hours, minutes, seconds, completed }) => {
             if (!completed) {
@@ -56,7 +67,7 @@ function Landing() {
               );
             }
           }}
-        />
+        /> */}
       </div>
     </div>
   );
