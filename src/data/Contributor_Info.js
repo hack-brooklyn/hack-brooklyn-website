@@ -1,5 +1,5 @@
 export const Organizers2021 = [
-   {
+  {
     first: "Dennis",
     last: "Klimenkov",
     link: "https://www.linkedin.com/in/dennis-klimenkov",
@@ -155,6 +155,7 @@ export const SoftwareEngineersWebsite2021 = [
     first: "Gezim",
     last: "Hakramaj",
     link: "https://github.com/GezimHakramaj",
+    pic: "/team-pics/gezim.jpg"
   },
 ];
 
